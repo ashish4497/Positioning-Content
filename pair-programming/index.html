@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pair-programming</title>
+  <!-- CSS LINK  -->
+  <link rel="stylesheet" href="./assets/stylesheet/style.css">
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="container">
+      <h1>side-by-side positioning demo</h1>
+    </div>
+    </headern>
+    <main>
+      <!-- SECTION-1  -->
+      <section>
+        <article class="container padding">
+          <div class="col-1">
+            <p class="article-text">
+              These two divs are psitioned next two one
+              another using display:inline-block
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="article-text">
+              Notice the spacess between them. It occurs becouse of my carriage
+              return in te HTML when i've used reset to ensure the elements should
+              have any default margin or padding. (I did add bottom margin to make Iteasier to
+              read). this space is actually aspace characcter render just as it would be
+              between two inline element
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- SECTON-2  -->
+      <section>
+        <article class="container padding clearfix">
+          <div class="col-3 ">
+            <p class="article-text float-text">
+              These two are psitioned using float:left.
+            </p>
+          </div>
+          <div class="col-3 ">
+            <p class="article-text float-text">
+              Ypu can see that, even though the elements are spaced in the
+              code, the space is not actually rendered on the page. This may not be
+              huge deal in these first examples, but ...
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- SECTION-3  -->
+      <section>
+        <article class="container padding">
+          <div class="side">
+            <p class="article-text">
+              what if i want my side by side by side element to take up
+              the full width of parent element? I cant set the width
+              of each to 50%, right?
+            </p>
+          </div>
+          <div class="side">
+            <p class="article-text">
+              Wrong! becouse, togeather two inline block element will add up to 100%
+              of the abalible width but that dosent account for the width.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- SECTION-4  -->
+      <article class="container padding">
+        <div class="col-3 ">
+          <p class="article-text float-text">
+            If i do the same thing with the floated elements..
+          </p>
+        </div>
+        <div class="col-3 ">
+          <p class="article-text float-text">
+            The two elements are side-by-side just as intented and fill the entire width
+            of parent (which is in the case.is the same as the width of viewport)
+          </p>
+        </div>
+      </article>
+      </section>
+    </main>
+</body>
+
+</html>
