@@ -99,22 +99,26 @@ body {
 
 .article-text {
 	color: white;
-	background-color: crimson;
+	border: 2px solid crimson;
+	background-color: rgb(141, 11, 37);
 	padding: 20px;
 	border-radius:10px;
 	text-transform: capitalize;
 }
 
 .float-text {
-
 	background-color:rgb(71, 160, 71);
-
+	border: 2px solid rgb(24, 105, 24);
 }
 
 /* SECTION-2  */
 .col-3 {
 	width:50%;
 	float: left;
+}
+
+.verticle-align {
+	vertical-align: top;
 }
 
 /* SECTION-3  */
