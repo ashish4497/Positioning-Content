@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Cambay', sans-serif;
+  /* position: relative; */
+}
+
+* ::after, ::before, *{
+  box-sizing: border-box;
+}
+
+.clearfix::after, .clearfix::before{
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+.btn {
+  height: 70px;
+  width: 70px;
+  background-color: #5285c1;
+  color: white;
+  border-radius: 50%;
+  border: 0;
+  text-transform: uppercase;
+  right: 20px;
+  bottom: 10px;
+  outline: none;
+  position: fixed;
+}
+
+/* generic class  */
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.padding {
+  padding: 30px 0;
+}
+
+/* header  */
+.top-header {
+  background-color: #5285c1;
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+}
+.left-logo {
+  float: left;
+}
+.nav-bar {
+  float: right;
+}
+
+nav a {
+  font-size: 18px;
+  text-transform:uppercase;
+  color: white;
+  margin-left: 12px;
+}
+
+/* section-1  */
+.col-2 {
+  float: left;
+  width: 50%;
+  padding-right:60px;
+}
+
+.article {
+  margin-top: 80px;
+}
+
+.article-heading {
+  font-size: 32px;
+  text-transform: capitalize;
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  font-weight: 800;
+}
+
+.article-text {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.right-image {
+  width: 100%;
+}
+
+/* section-2  */
+.gallery-parent{
+  padding:0 -2%;
+}
+
+.gallery-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 800;
+}
+
+.col-1-2-3 {
+  float: left;
+  width:33%;
+  padding:1.5%;
+}
+
+/* footer  */
+footer{
+  background-color: rgb(70, 65, 65);
+}
+.copy-right{
+  color: white;
+  font-size: 18px;
+}
